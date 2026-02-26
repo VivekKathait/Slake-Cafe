@@ -17,14 +17,13 @@ h1, h2 {
 
 /* HERO */
 .hero {
-    min-height: 85vh; /* Reduced from 100vh */
+    height: 100vh;
     background: url('images/hero.jpg') center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 20px; /* Prevent text touching borders */
 }
 
 .overlay {
@@ -38,19 +37,11 @@ h1, h2 {
     position: relative;
     z-index: 2;
     animation: fadeIn 2s ease-in-out;
-    max-width: 900px;
-    padding: 20px;
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 12px;
-}
-
-.hero p {
-    font-size: 15px;
-    margin-bottom: 10px;
-    opacity: 0.9;
+    font-size: 3rem;
+    margin-bottom: 15px;
 }
 
 .reserve-btn {
@@ -149,42 +140,15 @@ h1, h2 {
     opacity: 0.9;
 }
 
-/* MOBILE NAVBAR */
+/* RESPONSIVE */
 @media (max-width: 900px) {
-
-    .navbar {
-        padding: 15px 5%;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
+    .about-container {
+        grid-template-columns: 1fr;
         text-align: center;
     }
 
-    .nav-links li {
-        width: 100%;
-    }
-
-    .nav-links a {
-        display: block;
-        width: 100%;
-        padding: 8px 0;
-    }
-
-    .nav-reserve {
-        width: 100%;
-        text-align: center;
-    }
-
-    .logo {
-        font-size: 1.4rem;
+    .about-visual {
+        margin-top: 40px;
     }
 }
 
@@ -274,6 +238,44 @@ footer {
     letter-spacing: 1px;
 }
 
+/* MOBILE NAVBAR */
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .nav-reserve {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+}
 
 
 /* NAVBAR */
@@ -352,42 +354,10 @@ footer {
 }
 
 
-/* Disable hover effects on mobile */
-@media (max-width: 900px) {
-
-    .scroll-track img:hover,
-    .menu-item:hover,
-    .nav-reserve:hover,
-    .reserve-btn:hover {
-        transform: none;
-    }
-
-    .scroll-wrapper:hover .scroll-track {
-        animation-play-state: running;
-    }
-}
-
-@media (max-width: 900px) {
-
-    .hero h1 {
-        font-size: 1.9rem;
-        line-height: 1.3;
-    }
-
-    .hero p {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-
-    .gallery-section h2,
-    .menu-section h2 {
-        font-size: 1.8rem;
-        padding: 0 20px;
-    }
 
 
 
 
 
 
-}
+
