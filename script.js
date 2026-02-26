@@ -56,3 +56,23 @@ body {
     height: 45px;
     background: rgba(197, 157, 95, 0.1);
 }
+
+
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+});
+
+// Hover grow effect
+const hoverElements = document.querySelectorAll("a, button, .menu-item, img");
+
+hoverElements.forEach(el => {
+    el.addEventListener("mouseenter", () => {
+        cursor.classList.add("hover");
+    });
+    el.addEventListener("mouseleave", () => {
+        cursor.classList.remove("hover");
+    });
+});
