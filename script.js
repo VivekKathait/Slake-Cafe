@@ -25,10 +25,7 @@ document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
             .scrollIntoView({ behavior: "smooth" });
     });
 });
-
-
-
-
+//new new new
 
 const cursor = document.querySelector(".cursor");
 const follower = document.querySelector(".cursor-follower");
@@ -61,3 +58,5 @@ document.querySelectorAll("a, .reserve-btn").forEach(el => {
         follower.style.transform = "translate(-50%, -50%) scale(1)";
     });
 });
+
+
