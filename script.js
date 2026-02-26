@@ -26,3 +26,33 @@ document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+
+/* HIDE DEFAULT CURSOR */
+body {
+    cursor: none;
+}
+
+/* MAIN CURSOR DOT */
+.cursor {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #c59d5f;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 
+        width 0.3s ease,
+        height 0.3s ease,
+        background 0.3s ease,
+        transform 0.08s ease;
+    z-index: 9999;
+}
+
+/* EXPAND ON HOVER */
+.cursor.hover {
+    width: 45px;
+    height: 45px;
+    background: rgba(197, 157, 95, 0.1);
+}
