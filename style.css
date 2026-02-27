@@ -368,7 +368,7 @@ footer {
 }
 
 .map-btn:hover {
-    background: #c59d5f;
+    background: white;
     color: black;
     transform: scale(1.05);
 }
